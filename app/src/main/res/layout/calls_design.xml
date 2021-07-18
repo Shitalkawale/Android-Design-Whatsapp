@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:id="@+id/profileimg"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/name"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/profileimg"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/img1"
+            android:src="@drawable/ic_baseline_south_west_24"
+            android:layout_toRightOf="@id/profileimg"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Date"
+            android:id="@+id/date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/name"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/img2"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:layout_marginHorizontal="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

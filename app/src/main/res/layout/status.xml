@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        android:id="@+id/relative1"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:src="@drawable/nature1"
+            android:background="@drawable/circle"
+            android:id="@+id/statusimg"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="My Status"
+            android:id="@+id/mystatus"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/statusimg"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Yesterday, 9:17PM"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/statusimg"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/mystatus"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/more1"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            android:layout_toRightOf="@id/mystatus"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="150dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/relative1"
+        android:background="#E8E3E3"
+        android:id="@+id/relative2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Recent updates"
+            android:id="@+id/recent"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#353030"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative3"
+        android:layout_margin="10dp"
+        android:layout_below="@id/relative2"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:src="@drawable/nature2"
+            android:background="@drawable/circle"
+            android:id="@+id/imgrecent1"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Supriya"
+            android:id="@+id/namerecent1"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/imgrecent1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Yesterday, 9:17PM"
+            android:textSize="15sp"
+            android:id="@+id/daterecent1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgrecent1"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/namerecent1"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative4"
+        android:layout_margin="10dp"
+        android:layout_below="@id/relative3"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:src="@drawable/nature3"
+            android:background="@drawable/circle"
+            android:id="@+id/img1recent1"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Shital"
+            android:id="@+id/name1recent1"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/img1recent1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Yesterday, 9:17PM"
+            android:textSize="15sp"
+            android:id="@+id/date1recent1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img1recent1"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/name1recent1"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#E8E3E3"
+        android:layout_marginTop="200dp"
+        android:id="@+id/reletive5"
+        android:layout_below="@id/relative2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Viewed updates"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#353030"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview3"
+        android:layout_below="@id/reletive5"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

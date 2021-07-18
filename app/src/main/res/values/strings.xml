@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Design</string>
+    <string name="action_setting">Settings</string>
+
+    <string-array name="Name">
+        <item>Shital</item>
+        <item>Shital</item>
+        <item>Shital</item>
+        <item>Shital</item>
+        <item>Shital</item>
+        <item>Shital</item>
+        <item>Shital</item>
+    </string-array>
+
+    <drawable name="profile">
+
+    </drawable>
+
+</resources>

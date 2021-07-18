@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@drawable/circle"
+            android:id="@+id/imgstatus"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Shital"
+            android:id="@+id/namestatus"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/imgstatus"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Yesterday, 9:17PM"
+            android:textSize="15sp"
+            android:id="@+id/datestatus"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgstatus"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/namestatus"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
